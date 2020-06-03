@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="start-game" style="display: block">
+        <h1 class="title">Rock Paper scissors</h1>
+        <div class="player">
+            <h2>Player 1: <span><input type="text" id="name" placeholder="Enter name..."></span></h2>
+        </div>
+        <button id="play-now">Play Now</button>
+    </div>
+    <div class="game-div" style="display: none">
+        <div class="score">
+            <div class="player1">
+                <h2>Player</h2>
+                <p>0</p>
+            </div>
+            <div class="games-played">
+                <h5>Games Played</h5>
+                <p>0</p>
+            </div>
+            <div class="computer">
+                <h2>Computer</h2>
+                <p>0</p>
+            </div>
+        </div>
+        <div class="match">
+            <h2 class="winner">Choose an option!</h2>
+            <div class="hands">
+                <img  class="player-hand" src="./assets/rock.png" alt="">
+                <img  class="computer-hand" src="./assets/paper.png" alt="">
+                <img src="./assets/scissors.png" alt="">
+            </div>
+            <div class="options">
+                <button id="rock">ROCK</button>
+                <button id="paper">PAPER</button>
+                <button id="scissors">SCISSORS</button>
+            </div>
+            <button class="restart" id="restart-btn">Restart</button>
+        </div>
+    </div>
+    <div class="modal">
+        <div id="outPut" class="modal-content"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
